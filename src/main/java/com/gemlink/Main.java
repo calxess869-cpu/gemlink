@@ -10,17 +10,11 @@ import java.util.List;
 
 @SpringBootApplication
 @RestController
-@CrossOrigin(origins = "*") // Allows your frontend file to  communicate with this API
+@CrossOrigin(origins = "*") // Allows your frontend file to communicate with this API
 public class Main {
 
     public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
-    }
-
-    // Simple status message
-    @GetMapping("/")
-    public String home() {
-        return "💎 GemLink API Server is running.";
     }
 
     // This endpoint sends the dynamic list of popular games to your UI
